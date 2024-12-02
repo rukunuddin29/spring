@@ -1,0 +1,15 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Paytone+One&family=Playwrite+AU+VIC:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply font to the body */
+@layer base {
+  body {
+    @apply font-sans; /* Ensures Tailwind's default sans-serif fallback */
+    font-family: 'Josefin Sans', sans-serif; /* Applies the imported font */
+  }
+}
